@@ -1,0 +1,209 @@
+html {
+    background-image: url(./img/registratie-background.jpg);
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------------------------------------ */
+
+.headerLinks, #btn_login, #btn_register, #btn_vergeten, .choice a {
+    padding: 2% 4%;
+    border-radius: 10%;
+    float: right;
+    display: block;
+    margin-right: 1%;
+
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.choice a {
+    display: none;
+    width: 5px;
+    height: 10%;
+    text-decoration: none;
+    color: white;
+
+    margin-right: 100%;
+}
+
+.choice br {
+    display: none;
+}
+
+.headerLinks:hover .choice a {
+    display: block;
+}
+
+.headerLinks:hover .choice br {
+    display: block;
+}
+
+/* ------------------------------------------------------ */
+
+#main_index label {
+    display: flex;
+    color: white;
+    margin: 20% 20%; 
+    background-color: black; 
+    padding: 5% 5%; 
+    border: solid 2px white;
+}
+
+/* ------------------------------------------------------ */
+
+#form_login label, #form_register label, #form_vergeten label {
+    color: white;
+}
+
+#btn_login, #btn_register, #btn_vergeten {
+    cursor: pointer;
+    padding: 2% 10%;
+}
+
+/* ------------------------------------------------------ */
+
+#form_login {
+    height: 60%;
+    width: 30%;
+    background-color: black; 
+    padding: 5%; 
+    margin: 0 auto; 
+    border: solid 2px white;
+
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------ */
+
+#form_register {
+    height: 60%;
+    width: 30%;
+    margin: 0 auto;
+    
+    box-sizing: border-box;
+
+    background-color: black; 
+    padding: 5% 5%;
+    border: solid 2px white;
+}
+
+/* ------------------------------------------------------ */
+
+#form_vergeten {
+    background-color: black; 
+    padding: 5%;
+    width: 40%;
+    margin: 0 auto; 
+    border: solid 2px white;
+}
+
+#label_vergeten {
+    display: block; 
+    background-color: white; 
+    width: 50%;
+    margin: 0 auto;
+
+    border: solid 2px black;
+}
+
+/* ------------------------------------------------------ */
+
+input {
+    background-color: black;
+    border: none;
+    border-bottom: solid 1px white;
+    color: white;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+select:-webkit-autofill, 
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus { 
+    border: none;
+    border-bottom: 1px solid white; 
+    
+    -webkit-text-fill-color: white; 
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset; 
+    transition: background-color 5s ease-in-out 0s; 
+}
+
+input:focus {
+    color: white;
+}
+
+/* ------------------------------------------------------ */
+
+@media only screen and (max-width: 500px) {
+
+    .headerLinks, .thebtn {
+        width: 5%;
+        padding: 3% 30%;
+        margin-right: 17.5%;
+        text-align: center;
+    }
+
+    #main_index {
+        width: 60%;
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    #main_index label {
+        display: flex;
+        color: white;
+    }
+
+    #form_login {
+        background-color: black; 
+        padding: 5%;
+        width: 50%;
+        height: 200px;
+        margin: 0 auto;
+        border: solid 2px white;
+    }
+
+    #btn_login, #btn_register, #btn_vergeten {
+        margin-top: 20%;
+    }
+
+    #form_register {
+        background-color: black; 
+        padding: 5%;
+        width: 60%;
+        height: 300px;
+        margin: 0 auto;
+        border: solid 2px white;
+    }
+    
+    #form_vergeten {
+        background-color: black; 
+        padding: 5%;
+        width: 55%;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 20%;
+        border: solid 2px white;
+    }
+
+    #label_vergeten {
+        display: block; 
+        background-color: white; 
+        margin: 0;
+        margin: 0 auto; 
+        width: 70%;
+        border: solid 2px black;
+    }
+}

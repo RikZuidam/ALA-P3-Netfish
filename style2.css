@@ -1,0 +1,197 @@
+html {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------------------------------------ */
+
+.headerLinks, .choice a {
+    padding: 2% 4%;
+    border-radius: 10%;
+    float: right;
+    display: block;
+    margin-right: 1%;
+
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.choice a {
+    display: none;
+    width: 5px;
+    height: 10%;
+    text-decoration: none;
+    color: white;
+
+    margin-right: 100%;
+}
+
+.choice br {
+    display: none;
+}
+
+.headerLinks:hover .choice a {
+    display: block;
+}
+
+.headerLinks:hover .choice br {
+    display: block;
+}
+
+/* ------------------------------------------------------ */
+
+iframe {
+    height: 400px;
+    width: 40%;
+    float: right;
+    margin-top: -35%;
+    display: flex;
+}
+
+#main_main {
+    margin: -4% 10%;
+    color: white;
+}
+
+/* ------------------------------------------------------ */
+
+#form_overzicht {
+    height: 300px;
+    width: 60%;
+    margin: 10% auto;
+    
+    box-sizing: border-box;
+
+    background-color: black; 
+    padding: 5% 5%;
+    border: solid 2px white;
+    overflow: auto;
+}
+
+#form_overzicht table, #form_overzicht tr, #form_overzicht th, #form_overzicht td {
+    color: white;
+    text-align: center;
+    margin: 0% auto;
+}
+
+/* ------------------------------------------------------ */
+
+#form_toevoegen {
+    border: solid 1px white;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    padding: 5%;
+}
+
+#form_toevoegen input {
+    margin: 0 50%;
+}
+
+/* ------------------------------------------------------ */
+
+#form_video {
+    height: 500px;
+    width: 60%;
+    margin: 10% auto;
+    
+    box-sizing: border-box;
+
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    overflow: auto;
+}
+
+#form_video label {
+    font-size: 2vw;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+#form_video table, #form_video tr, #form_video th, #form_video td {
+    color: white;
+    margin: 0 auto;
+}
+
+#form_video td {
+    color: white;
+}
+
+#form_video a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------ */
+
+input {
+    background-color: black;
+    border: none;
+    border-bottom: solid 1px white;
+    color: white;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+select:-webkit-autofill, 
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus { 
+    border: none;
+    border-bottom: 1px solid white; 
+    
+    -webkit-text-fill-color: white; 
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset; 
+    transition: background-color 5s ease-in-out 0s; 
+}
+
+input:focus {
+    color: white;
+}
+
+/* ------------------------------------------------------ */
+
+
+@media only screen and (max-width: 600px) {
+
+    iframe, #nav_main img {
+        display: none;
+    }
+
+    .headerLinks {
+        width: 5%;
+        padding: 3% 30%;
+        margin-right: 17.5%;
+        margin-top: 2%;
+    }
+
+    #main_main h1 {
+        color: white;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    #main_main img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #form_overzicht {
+        width: 80%;
+        margin: 50% auto;
+        text-align: justify;
+    }
+
+    #form_toevoegen {
+        width: 80%;
+        margin: 50% auto;
+        text-align: justify;
+    }
+}
